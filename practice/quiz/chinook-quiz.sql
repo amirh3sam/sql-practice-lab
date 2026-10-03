@@ -1,7 +1,7 @@
 /* ============================================================================
    SQL PRACTICE LAB  |  Chinook (a digital music store)  |  QUIZ (no answers)
    60 questions from easy to hard. Write your own query under each one.
-   https://github.com/hesamworkshop/sql-practice-lab
+   https://github.com/amirh3sam/sql-practice-lab
 
    HOW TO USE THIS FILE IN DBEAVER
      1. File > Open File...  and choose this file.

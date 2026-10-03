@@ -66,4 +66,4 @@ SQL Practice Lab is an independent learning project. It is not affiliated with, 
 
 ## Something missing or wrong?
 
-If you are one of the authors and want a credit changed, or you spot a mistake on this page, please [open an issue](https://github.com/hesamworkshop/sql-practice-lab/issues). It will be fixed quickly.
+If you are one of the authors and want a credit changed, or you spot a mistake on this page, please [open an issue](https://github.com/amirh3sam/sql-practice-lab/issues). It will be fixed quickly.

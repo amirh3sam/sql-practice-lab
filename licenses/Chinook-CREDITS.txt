@@ -25,7 +25,7 @@ ABOUT THE DATA
 
 ----------------------------------------------------------------------------
 Packaged for SQL Practice Lab
-https://github.com/hesamworkshop/sql-practice-lab
+https://github.com/amirh3sam/sql-practice-lab
 
 SQL Practice Lab is an independent learning project. It is not affiliated
 with or endorsed by Luis Rocha.
