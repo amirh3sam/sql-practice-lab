@@ -1,61 +1,74 @@
-
+<p align="center">
+  <img src="assets/banner.png" alt="SQL Practice Lab. Learn SQL by doing: two real databases, one free tool, and 100 questions with tested answers." width="100%">
+</p>
 
 <p align="center">
-  <img src="assets/banner.png" alt="SQL Practice Lab. Learn SQL by doing: two real databases, one free tool, and 100 questions with tested answers." width="100%"></p>
-<p align="center">
-  <img alt="100 questions" src="https://shields.io">
-  <img alt="2 databases" src="https://shields.io">
-  <img alt="Engine: SQLite" src="https://shields.io">
-  <img alt="Tool: DBeaver Community" src="https://shields.io">
-  <a href="#credits-and-licenses"><img alt="Price: free" src="https://shields.io"></a>
-  <a href="https://github.com"><img alt="GitHub stars" src="https://shields.io"></a></p>
+  <img alt="100 questions" src="https://img.shields.io/badge/questions-100-3fe0c5?style=flat-square&labelColor=0a0e14">
+  <img alt="2 databases" src="https://img.shields.io/badge/databases-2-3fe0c5?style=flat-square&labelColor=0a0e14">
+  <img alt="Engine: SQLite" src="https://img.shields.io/badge/engine-SQLite-a98bff?style=flat-square&labelColor=0a0e14">
+  <img alt="Tool: DBeaver Community" src="https://img.shields.io/badge/tool-DBeaver%20Community-a98bff?style=flat-square&labelColor=0a0e14">
+  <a href="#credits-and-licenses"><img alt="Price: free" src="https://img.shields.io/badge/price-free-f5c451?style=flat-square&labelColor=0a0e14"></a>
+  <a href="https://github.com/amirh3sam/sql-practice-lab/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/amirh3sam/sql-practice-lab?style=flat-square&labelColor=0a0e14&color=f5c451"></a>
+</p>
+
 <p align="center">
   <a href="#quick-start"><b>Quick start</b></a> ·
   <a href="#the-two-databases">The databases</a> ·
   <a href="#the-100-questions">The 100 questions</a> ·
   <a href="#sqlite-cheat-sheet">Cheat sheet</a> ·
   <a href="#faq">FAQ</a> ·
-  <a href="#credits-and-licenses">Credits</a></p>
+  <a href="#credits-and-licenses">Credits</a>
+</p>
 
 You don't learn SQL by reading about it. You learn it by typing a query, pressing run, and looking at what comes back.
 
 This repo gives you everything you need for that:
+
 - **Two ready-made databases.** A small music store and a company with 300,024 employees. Each one is a single file, so there is no server to install and no account to create.
 - **100 practice questions**, from your first `SELECT` to the window functions that show up in job interviews. Every answer was run against the real data, and the expected result is written right under it.
-- **A picture guide** for [DBeaver Community](https://dbeaver.io), a free app for Windows, macOS and Linux.- **Proper credits.** Both databases come with their original licenses and the names of the people who made them.
+- **A picture guide** for [DBeaver Community](https://dbeaver.io/), a free app for Windows, macOS and Linux.
+- **Proper credits.** Both databases come with their original licenses and the names of the people who made them.
+
 <p align="center">
-  <img src="assets/dbeaver-overview.png" alt="DBeaver with the Chinook practice file open: tables on the left, questions and answers in the editor, results at the bottom." width="100%"></p>
+  <img src="assets/dbeaver-overview.png" alt="DBeaver with the Chinook practice file open: tables on the left, questions and answers in the editor, results at the bottom." width="100%">
+</p>
+
 <p align="center"><sub>
   <b>1</b> your databases and their tables &nbsp;·&nbsp;
   <b>2</b> the question and its answer &nbsp;·&nbsp;
   <b>3</b> run button &nbsp;·&nbsp;
   <b>4</b> the result &nbsp;·&nbsp;
-  <b>5</b> the database this file is connected to</sub></p>
+  <b>5</b> the database this file is connected to
+</sub></p>
+
 ## Quick start
+
 It takes about 10 minutes.
+
 ### Step 1. Download three things
+
 | What | Size | Link |
 |---|---|---|
-| Chinook database | 0.4 MB | **[chinook-sqlite.zip](https://github.com)** |
-| Employees database | 81 MB (about 300 MB unzipped) | **[employees-sqlite.zip](https://github.com)** |
-| The practice files | 2 MB | **[this repo as a ZIP](https://github.com)**, or `git clone` it |
+| Chinook database | 0.4 MB | **[chinook-sqlite.zip](https://github.com/amirh3sam/sql-practice-lab/releases/latest/download/chinook-sqlite.zip)** |
+| Employees database | 81 MB (about 300 MB unzipped) | **[employees-sqlite.zip](https://github.com/amirh3sam/sql-practice-lab/releases/latest/download/employees-sqlite.zip)** |
+| The practice files | 2 MB | **[this repo as a ZIP](https://github.com/amirh3sam/sql-practice-lab/archive/refs/heads/main.zip)**, or `git clone` it |
 
 Unzip all three. To keep things tidy, move the two database files into the `databases` folder:
 
-
+```
 sql-practice-lab/
 ├── databases/
-│ ├── Chinook_Sqlite.sqlite from chinook-sqlite.zip
-│ └── employees_db-full-1.0.6.db from employees-sqlite.zip
+│   ├── Chinook_Sqlite.sqlite          from chinook-sqlite.zip
+│   └── employees_db-full-1.0.6.db     from employees-sqlite.zip
 └── practice/
-├── chinook.sql 60 questions with answers
-├── employees.sql 40 questions with answers
-└── quiz/ the same questions, no answers
-
+    ├── chinook.sql                    60 questions with answers
+    ├── employees.sql                  40 questions with answers
+    └── quiz/                          the same questions, no answers
+```
 
 ### Step 2. Install DBeaver Community
 
-Get it from **[dbeaver.io/download](https://dbeaver.io)**, pick your system, and install it with the default options. It is free and open source, and it brings everything it needs, so there is nothing else to install.
+Get it from **[dbeaver.io/download](https://dbeaver.io/download/)**, pick your system, and install it with the default options. It is free and open source, and it brings everything it needs, so there is nothing else to install.
 
 <details>
 <summary>Prefer a package manager?</summary>
@@ -263,50 +276,107 @@ Two things to check. First, the box in the toolbar: it must show the right datab
 <details>
 <summary><b>DBeaver says "No active connection"</b></summary>
 
+The file is not connected to a database yet. Click the `< N/A >` box in the toolbar, pick a database and click **Select**. See [step 5](#step-5-run-your-first-query).
 
-The file is not connected to a database yet. Click the < N/A > box in the toolbar, pick a database and click Select. See step 5.
-I only see 200 rows, but the table has many more
-DBeaver loads 200 rows at a time to stay fast. When there are more, the counter in the bottom right corner shows 200+. Scroll to the bottom of the result and DBeaver loads the next rows. To know how many rows there are in total, use COUNT(*).
-Can I break the database?
-Not with SELECT. Reading data never changes it. If you try INSERT, UPDATE or DELETE and want a fresh start afterwards, unzip the database again.
-Some Employees queries take a few seconds
-That is normal. The salaries table has 2.8 million rows. The slowest answers in this repo take a few seconds. Most take less than one.
-DBeaver could not download the driver
-The download in step 3.4 needs an internet connection, and it only happens once. On an office or school network a firewall can block it. Try again on another network.
-My DBeaver looks a bit different from the pictures
-The pictures were taken with DBeaver Community 26.2.1 in the dark theme. Other versions and the light theme look slightly different, but the steps are the same. The keys shown here are for Windows and Linux. On a Mac, every action is also in the SQL Editor menu with its shortcut next to it.
-Can I use another tool instead of DBeaver?
-Yes. The databases are plain SQLite files and the practice files are plain text, so any SQLite tool works, for example DB Browser for SQLite, the sqlite3 command line, or a SQLite extension for your code editor.
-Will what I learn here work in MySQL, PostgreSQL or SQL Server?
-Almost all of it. SELECT, WHERE, GROUP BY, JOIN, subqueries, CTEs and window functions are standard SQL. The few SQLite habits, mostly around dates and joining text, are listed in the cheat sheet.
-How can I see how the tables connect inside DBeaver?
-Double-click the Tables folder of a connection and open the Diagram tab.
+</details>
+
+<details>
+<summary><b>I only see 200 rows, but the table has many more</b></summary>
+
+DBeaver loads 200 rows at a time to stay fast. When there are more, the counter in the bottom right corner shows `200+`. Scroll to the bottom of the result and DBeaver loads the next rows. To know how many rows there are in total, use `COUNT(*)`.
+
+</details>
+
+<details>
+<summary><b>Can I break the database?</b></summary>
+
+Not with `SELECT`. Reading data never changes it. If you try `INSERT`, `UPDATE` or `DELETE` and want a fresh start afterwards, unzip the database again.
+
+</details>
+
+<details>
+<summary><b>Some Employees queries take a few seconds</b></summary>
+
+That is normal. The `salaries` table has 2.8 million rows. The slowest answers in this repo take a few seconds. Most take less than one.
+
+</details>
+
+<details>
+<summary><b>DBeaver could not download the driver</b></summary>
+
+The download in [step 3.4](#step-3-connect-to-the-chinook-database) needs an internet connection, and it only happens once. On an office or school network a firewall can block it. Try again on another network.
+
+</details>
+
+<details>
+<summary><b>My DBeaver looks a bit different from the pictures</b></summary>
+
+The pictures were taken with DBeaver Community 26.2.1 in the dark theme. Other versions and the light theme look slightly different, but the steps are the same. The keys shown here are for Windows and Linux. On a Mac, every action is also in the <b>SQL Editor</b> menu with its shortcut next to it.
+
+</details>
+
+<details>
+<summary><b>Can I use another tool instead of DBeaver?</b></summary>
+
+Yes. The databases are plain SQLite files and the practice files are plain text, so any SQLite tool works, for example DB Browser for SQLite, the `sqlite3` command line, or a SQLite extension for your code editor.
+
+</details>
+
+<details>
+<summary><b>Will what I learn here work in MySQL, PostgreSQL or SQL Server?</b></summary>
+
+Almost all of it. `SELECT`, `WHERE`, `GROUP BY`, `JOIN`, subqueries, CTEs and window functions are standard SQL. The few SQLite habits, mostly around dates and joining text, are listed in the [cheat sheet](#sqlite-cheat-sheet).
+
+</details>
+
+<details>
+<summary><b>How can I see how the tables connect inside DBeaver?</b></summary>
+
+Double-click the **Tables** folder of a connection and open the **Diagram** tab.
+
+<p align="center"><img src="assets/dbeaver-er-diagram.png" alt="The Diagram tab in DBeaver shows how the Chinook tables connect." width="100%"></p>
+
+</details>
+
 ## Check the answers yourself
-Every answer in this repo can be re-run with one command. It needs Python 3 and nothing else. Put the two databases in the databases folder first.
-bash python tools/check_answers.py 
 
+Every answer in this repo can be re-run with one command. It needs Python 3 and nothing else. Put the two databases in the `databases` folder first.
+
+```bash
+python tools/check_answers.py
+```
+
+```
 SQLite 3.45.1
 
 Chinook    60 of 60 answers match  (0.0 s)
 Employees  40 of 40 answers match  (15.0 s)
+```
 
 ## Contributing
-Found a mistake, or have a good question to add? Open an issue or a pull request. If you add a question, please include the answer and its -- Result: line, and run python tools/check_answers.py before you send it. By sending a contribution you agree that it can be published as part of this project.
+
+Found a mistake, or have a good question to add? Open an [issue](https://github.com/amirh3sam/sql-practice-lab/issues) or a pull request. If you add a question, please include the answer and its `-- Result:` line, and run `python tools/check_answers.py` before you send it. By sending a contribution you agree that it can be published as part of this project.
+
 ## Credits and licenses
+
 This project stands on the work of people who made these databases and shared them freely. Thank you.
 
 | What | Made by | License |
 |---|---|---|
-| Chinook database | Luis Rocha. Source: lerocha/chinook-database[](https://github.com/lerocha/chinook-database) | MIT |
-| Employees database | Original data by Fusheng Wang and Carlo Zaniolo (Siemens Corporate Research). Relational schema by Giuseppe Maxia. Relational export by Patrick Crews. SQLite port by Peter Reutemann. Sources: fracpete/employees-db-sqlite[](https://github.com/fracpete/employees-db-sqlite), datacharmer/test_db[](https://github.com/datacharmer/test_db) | CC BY‑SA 3.0 |
-| Questions, answers, guide and pictures | AmirHesam Tech | All rights reserved |
+| **Chinook database** | Luis Rocha. Source: [lerocha/chinook-database](https://github.com/lerocha/chinook-database) | [MIT](licenses/Chinook-LICENSE.md) |
+| **Employees database** | Original data by Fusheng Wang and Carlo Zaniolo (Siemens Corporate Research). Relational schema by Giuseppe Maxia. Relational export by Patrick Crews. SQLite port by Peter Reutemann. Sources: [fracpete/employees-db-sqlite](https://github.com/fracpete/employees-db-sqlite), [datacharmer/test_db](https://github.com/datacharmer/test_db) | [CC&nbsp;BY&#8209;SA&nbsp;3.0](licenses/Employees-LICENSE-CC-BY-SA-3.0.txt) |
+| **Questions, answers, guide and pictures** | AmirHesam Tech | [All rights reserved](LICENSE.md) |
 
-Both databases are shared unchanged. Each download ZIP contains the database together with its license and its credits. The details, including checksums so you can verify the files, are in the licenses folder.
-The databases are free to share. If you pass on the Employees database, credit the people above, link to the license, and keep it under the same license.
-The questions, guide and pictures are free to use for your own learning. You are welcome to star, fork and link to this repo. Please ask before you republish them somewhere else, for example in a course, a video or a book. The terms are in LICENSE.md.
+Both databases are shared **unchanged**. Each download ZIP contains the database together with its license and its credits. The details, including checksums so you can verify the files, are in the [`licenses`](licenses/) folder.
+
+**The databases are free to share.** If you pass on the Employees database, credit the people above, link to the license, and keep it under the same license.
+
+**The questions, guide and pictures are free to use for your own learning.** You are welcome to star, fork and link to this repo. Please ask before you republish them somewhere else, for example in a course, a video or a book. The terms are in [LICENSE.md](LICENSE.md).
+
 This is an independent learning project. It is not affiliated with or endorsed by the database authors, DBeaver or SQLite. All product names belong to their owners.
+
 ## About
-Made by [AmirHesam Tech](https://amirhesamtech.com). More tech content on TikTok: [@techwithamirh3sam](https://www.tiktok.com/@techwithamirh3sam).
+
+Made by **[AmirHesam Tech](https://amirhesamtech.com)**. More tech content on TikTok: [@techwithamirh3sam](https://www.tiktok.com/@techwithamirh3sam).
+
 If this repo saved you some time, please give it a star. It helps other learners find it.
-
-
