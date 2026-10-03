@@ -1,0 +1,55 @@
+EMPLOYEES SAMPLE DATABASE (SQLite port)
+=======================================
+
+File     : employees_db-full-1.0.6.db
+Version  : 1.0.6
+License  : Creative Commons Attribution-ShareAlike 3.0 Unported (CC BY-SA 3.0)
+           https://creativecommons.org/licenses/by-sa/3.0/
+           The full legal text is in Employees-LICENSE.txt, next to this file.
+
+WHO MADE IT
+  Original data ....... Fusheng Wang and Carlo Zaniolo,
+                        Siemens Corporate Research
+                        http://timecenter.cs.aau.dk/software.htm
+  Relational schema ... Giuseppe Maxia
+  Relational export ... Patrick Crews
+  MySQL "test_db" ..... https://github.com/datacharmer/test_db
+  SQLite port ......... Peter Reutemann (fracpete), made with mysql2sqlite
+                        https://github.com/fracpete/employees-db-sqlite
+
+CHANGES
+  Nothing inside the database was changed. It is the unmodified file from
+  https://raw.githubusercontent.com/fracpete/employees-db-sqlite/master/employees_db-full-1.0.6.db.gz
+
+  The only difference is the packaging: the original download is a .gz
+  archive. Here the same file was extracted and packed into a .zip, next to
+  its license and these credits.
+
+  SHA-256 of employees_db-full-1.0.6.db:
+  1c922847de40d6b68b4db0e18a467656fe92e2e221915f2b16fa08bee0ed2b6f
+
+  SHA-256 of the original employees_db-full-1.0.6.db.gz:
+  be11573563410accba53381af781b674c44f51f55b782e1c3e447c85d5a3beca
+
+IF YOU SHARE THIS DATABASE
+  You may copy, share and change it, as long as you:
+    1. give credit to the people listed above,
+    2. link to the license and say what you changed,
+    3. share any changed version under the same license (CC BY-SA 3.0),
+       a later version of it, or a compatible license.
+  This is only a summary. The license text is what counts.
+
+DISCLAIMER FROM THE ORIGINAL AUTHORS
+  "To the best of my knowledge, this data is fabricated and it does not
+  correspond to real people. Any similarity to existing people is purely
+  coincidental."
+
+  The database is provided as-is, without warranties, as described in the
+  license.
+
+----------------------------------------------------------------------------
+Packaged for SQL Practice Lab
+https://github.com/hesamworkshop/sql-practice-lab
+
+SQL Practice Lab is an independent learning project. It is not affiliated
+with or endorsed by the people named above.

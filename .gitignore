@@ -1,0 +1,19 @@
+# The database files are shared through GitHub Releases, not through git.
+# (The Employees database is about 300 MB, which is over GitHub's file limit.)
+databases/*
+!databases/README.md
+
+# SQLite side files
+*.db-journal
+*.sqlite-journal
+*.db-wal
+*.db-shm
+
+# Release ZIPs built by tools/build_release_zips.py
+dist/
+
+# Python and operating system clutter
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

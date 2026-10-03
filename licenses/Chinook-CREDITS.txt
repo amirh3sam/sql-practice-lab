@@ -1,0 +1,31 @@
+CHINOOK DATABASE (SQLite)
+=========================
+
+File       : Chinook_Sqlite.sqlite
+Version    : 1.4.5
+Author     : Luis Rocha
+Copyright  : Copyright (c) 2008-2024 Luis Rocha
+License    : MIT License
+             The full original license text is in Chinook-LICENSE.txt,
+             next to this file.
+Source     : https://github.com/lerocha/chinook-database
+Taken from : https://github.com/lerocha/chinook-database/releases/download/v1.4.5/Chinook_Sqlite.sqlite
+
+CHANGES
+  None. This is the unmodified file from the official v1.4.5 release.
+
+  SHA-256 of Chinook_Sqlite.sqlite:
+  bdf635be69850bd3be09c9a2dbeef7ddfb80036bd3ef3381383cd03b61e4a61a
+
+ABOUT THE DATA
+  Chinook is a sample database of a digital music store. From the Chinook
+  project page: media data comes from a real iTunes library, customer and
+  employee information was created by hand using fictitious names, and sales
+  information is auto generated random data.
+
+----------------------------------------------------------------------------
+Packaged for SQL Practice Lab
+https://github.com/hesamworkshop/sql-practice-lab
+
+SQL Practice Lab is an independent learning project. It is not affiliated
+with or endorsed by Luis Rocha.

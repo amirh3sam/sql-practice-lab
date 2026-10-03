@@ -1,0 +1,10 @@
+# Keep line endings the same on every system
+* text=auto
+*.sql text eol=lf
+*.py  text eol=lf
+*.md  text eol=lf
+*.txt text eol=lf
+*.png binary
+
+# Count the SQL files in GitHub's language bar (SQL is skipped by default)
+*.sql linguist-detectable=true
